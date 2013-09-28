@@ -1,3 +1,12 @@
+/*
+	Deepstar Airless Lander Complex Edition
+	
+	Visuals by 80mileshigh
+	Parameters by Axel
+	Code by Izack
+*/
+
+
 #include "Orbitersdk.h"
 #include "OrbiterAPI.h"
 #include "VesselAPI.h"

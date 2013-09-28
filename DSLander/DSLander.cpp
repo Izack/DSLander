@@ -1,3 +1,11 @@
+/*
+	Deepstar Airless Lander Complex Edition
+	
+	Visuals by 80mileshigh
+	Parameters by Axel
+	Code by Izack
+*/
+
 #include "DSLander.h"
 
 DSLander::DSLander(OBJHANDLE hVessel, int fmodel)
