@@ -28,6 +28,11 @@ public:
 	void clbkPreStep(double SimT, double SimDT, double mjd);
 	bool clbkDrawHUD(int mode, const HUDPAINTSPEC *hps, oapi::Sketchpad *skp);
 
+	DOCKHANDLE dock_main;
+	PROPELLANT_HANDLE prop_main, prop_apu, prop_rcs;
+	THRUSTER_HANDLE thr_input, thr_main, thr_rcs[20];
+	THGROUP_HANDLE thg_main,thg_usr;
+
 	//OrbiterSound
 	int OSID;
 private:
@@ -40,8 +45,5 @@ private:
 
 	int hudmode;
 
-	PROPELLANT_HANDLE prop_main, prop_apu, prop_rcs;
-	THRUSTER_HANDLE thr_input, thr_main, thr_rcs[20];
-	THGROUP_HANDLE thg_main,thg_usr;
 	void InitPropulsion();
 };
