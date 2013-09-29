@@ -80,11 +80,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="APU.cpp" />
     <ClCompile Include="DSLander.cpp" />
     <ClCompile Include="Propulsion.cpp" />
     <ClCompile Include="RD445.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="APU.h" />
     <ClInclude Include="DSLander.h" />
     <ClInclude Include="RD445.h" />
   </ItemGroup>

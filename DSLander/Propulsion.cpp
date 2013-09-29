@@ -11,7 +11,7 @@
 void DSLander::InitPropulsion()
 {
 	prop_main = CreatePropellantResource(80000);
-
+	prop_apu = CreatePropellantResource(1000);
 	//THROTTLE INPUT
 	thr_input = CreateThruster(_V(0,0,0),_V(0,1,0),0,prop_main,0);
 	CreateThrusterGroup(&thr_input,1,THGROUP_MAIN);

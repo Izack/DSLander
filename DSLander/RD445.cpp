@@ -1,3 +1,18 @@
+/*
+	Cavradyne Aerospace
+	Deep Space Rocket Engineering
+	Systems Control
+	Wideawake Facility, Ascension Island
+
+	Model RD-445 Control Module
+	Research and Development Experimental Bipropellant Methane / Liquid Oxygen Rocket Engine
+
+	Vacuum Thrust Rating:  1.2 MN
+	Specific Impulse:     3700 m/s
+
+	Code by Izack
+*/
+
 #include "RD445.h"
 
 RD445::RD445()

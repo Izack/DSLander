@@ -24,12 +24,18 @@
     <ClCompile Include="RD445.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="APU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DSLander.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RD445.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -12,6 +12,7 @@ DSLander::DSLander(OBJHANDLE hVessel, int fmodel)
 : VESSEL3(hVessel, fmodel)
 {
 	RD445* eng1 = new RD445();
+	APU* apu1 = new APU();
 }
 
 DSLander::~DSLander()
@@ -40,6 +41,9 @@ void DSLander::clbkPostCreation(void)
 void DSLander::clbkPreStep(double SimT, double SimDT, double MJD)
 {
 	SetThrusterLevel(thr_main,eng1.Propagate(SimT, SimDT, MJD, GetThrusterLevel(thr_input)));
+
+	apu1.Activate(true);
+	S
 
 	sprintf(oapiDebugString(),"%.3f",GetThrusterGroupLevel(thg_usr));
 }
