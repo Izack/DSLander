@@ -2,3 +2,15 @@ TODO:
 	Enable/disable transponder and IDS
 	Enable/disable docking port
 	
+	APU stuff:
+		Preheat
+		
+		
+		
+		
+Engine startup procedure:
+	-Ensure electrical power
+	-Preheat APU
+	-Start APU
+	-Start propellant and oxygen turbines
+	-Initiate propellant and oxygen flow (Initiate autoignition)

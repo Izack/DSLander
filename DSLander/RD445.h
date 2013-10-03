@@ -23,7 +23,7 @@ public:
 	//~RD445();
 
 	//Functions
-	double Propagate(double SimT, double SimDT, double MJD, double throttle);
+	double Iterate(double SimT, double SimDT, double MJD, double throttle);
 	double output;
 
 	int test;

@@ -37,7 +37,7 @@ RD445::RD445()
 
 }*/
 
-double RD445::Propagate(double SimT, double SimDT, double MJD, double throttle)
+double RD445::Iterate(double SimT, double SimDT, double MJD, double throttle)
 {
 	//Placeholder
 	

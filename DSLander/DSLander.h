@@ -16,6 +16,10 @@
 #include "OrbiterSoundSDK40.h"
 
 #define ORBITER_MODULE
+#define HUDMODE_GENERAL 0
+#define HUDMODE_ENGINE 1
+#define HUDMODE_APU 2
+#define HUDMODE_DEBUG 3
 
 class DSLander: public VESSEL3
 {
@@ -27,6 +31,7 @@ public:
 	void clbkPostCreation(void);
 	void clbkPreStep(double SimT, double SimDT, double mjd);
 	bool clbkDrawHUD(int mode, const HUDPAINTSPEC *hps, oapi::Sketchpad *skp);
+	int clbkConsumeBufferedKey(DWORD key, bool down, char *kstate);
 
 	DOCKHANDLE dock_main;
 	PROPELLANT_HANDLE prop_main, prop_apu, prop_rcs;
@@ -36,14 +41,11 @@ public:
 	//OrbiterSound
 	int OSID;
 private:
-	//States
-	bool state_engine;
-	bool state_pressurant;
-
 	RD445 eng1;
 	APU apu1;
 
 	int hudmode;
+	void SwitchHUD(int hud_mode);
 
 	void InitPropulsion();
 };
