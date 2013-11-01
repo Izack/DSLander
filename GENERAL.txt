@@ -1,0 +1,8 @@
+DSLander Control System
+_______________________
+
+
+Oxidiser turbopump 1:    5000 RPM
+Oxidiser turbopump 2:   20000 RPM
+Propellant turbopump 1:  5000 RPM
+Propellant turbopump 2: 25000 RPM

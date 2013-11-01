@@ -1,6 +1,8 @@
 TODO:
 	Enable/disable transponder and IDS
 	Enable/disable docking port
+	Make HUD left and right columns separately changeable with Ctrl and Alt numbers, cycle with U
+	bump hud lines down 1
 	
 	APU stuff:
 		Preheat
@@ -14,3 +16,17 @@ Engine startup procedure:
 	-Start APU
 	-Start propellant and oxygen turbines
 	-Initiate propellant and oxygen flow (Initiate autoignition)
+
+
+States to save:
+int hudmode_l
+int hudmode_r
+
+bool apu1.active
+bool apu1.preheating
+bool apu1.turbine
+bool apu1.cooling
+double apu1.rpm
+double apu1.temp
+double apu1.fuel_consumption
+int apu1.starts

@@ -1,0 +1,34 @@
+RD-445:
+
+Notes:
+Second-stage turbines should run 5 times faster than first stage. I.E. Oxypump
+
+Parameters:
+preheating
+cooling
+oxypump 1 rpm
+oxypmp 2 rpm
+fuel pump 1 rpm
+fuel pump 2 rpm
+oxypump temp
+oxypump dtemp
+fuelpump temp
+fuelpump dtemp
+mcc temp
+mcc dtemp
+
+HUD display:
+
+ENGINE DISPLAY
+
+MAIN POWER: ON/OFF
+PREHEAT: ON/OFF
+OXY PUMP TURBINE: ON/OFF
+FUEL PUMP TURBINE: ON/OFF
+COOLING: ON/OFF
+
+OXY PUMP RPM: LPTP/HPTP
+FUEL PUMP RPM: LPTP/HPTP
+OXY PUMP TEMP: 0000
+FUEL PUMP TEMP: 0000
+MCC TEMP: 0000

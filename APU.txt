@@ -1,0 +1,48 @@
+APU:
+
+Parameters:
+preheating
+cooling
+active
+turbine
+
+propmass
+rpm
+fuel_consumtion
+temp
+dtemp (reset every iteration)
+
+Iterate:
+set dtemp to 0K
+if active:
+	if preheating:
+		if temp < 323K:
+			increase dtemp by 12.3K
+	if turbine:
+		if temp > 320K:
+			if propmass > 100:
+				increase rpm to 4000 at 73rpm/sec
+				set fuel consumption to rpm*0.000001
+				increase dtemp by rpm*0.001K/s
+			else:
+				disable turbine
+		else:
+			disable turbine
+	else:
+		decrease rpm to 0 at 73rpm/sec
+		set fuel consumption to rpm*0.000001
+		increase dtemp by rpm*0.001K/s
+	if cooling:
+		if turbine:
+			if temp > 723K:
+				decrease dtemp by 5K
+		else if temp > 323K:
+			decrease temp by 5K
+else:
+	if preheating:
+		disable preheating
+	if turbine:
+		disable turbine
+add dtemp to temp
+if temp > 820:
+	disable turbine

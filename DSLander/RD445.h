@@ -26,8 +26,6 @@ public:
 	double Iterate(double SimT, double SimDT, double MJD, double throttle);
 	double output;
 
-	int test;
-
 	//Switch states
 	bool s_main; //main power
 	bool s_oxypump1;
